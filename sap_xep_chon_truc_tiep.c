@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define MAX 100
 
 void SelectionSort(int a[], int n){
     for(int i = 0; i < n - 1; i++){
@@ -15,10 +16,19 @@ void SelectionSort(int a[], int n){
     }
 }
 
+void InputArray(int a[], int *n){
+    printf("Nhập số phần tử của mảng: ");
+    scanf("%d", n);
+    printf("Nhập %d phần tử của mảng:\n", *n);
+    for(int i = 0; i < *n; i++){
+        scanf("%d", &a[i]);
+    }
+}
+
 int main (){
     
-    int a[] = {12, 2, 8, 5, 1, 6, 4, 15};
-    int n = sizeof(a) / sizeof(a[0]);
+    int a[MAX], n;
+    InputArray(a, &n);
     SelectionSort(a, n);
     printf("Dãy số tăng dần: \n");
     for(int i = 0; i < n; i++){

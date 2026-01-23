@@ -1,14 +1,14 @@
 #include <stdio.h>
 #define MAX 100
 
-void SortArray(int a[], int n){
+void BubbleSort(int a[], int n){
     int i, j, temp;
-    for (i = 0; i < n-1; i++) {
-        for (j = i + 1; j < n; j++) {
-            if (a[j] < a[i]) {
-                temp = a[i];
-                a[i] = a[j];
-                a[j] = temp;
+    for(i = 0; i < n; i++){
+        for(j = n - 1; j > i; j--){
+            if(a[j] < a[j - 1]){
+                temp = a[j];
+                a[j] = a[j - 1];
+                a[j - 1] = temp;
             }
         }
     }
@@ -26,9 +26,9 @@ void InputArray(int a[], int *n){
 int main(){
     int a[MAX], n;
     InputArray(a, &n);
-    SortArray(a, n);
-    printf("Dãy số tăng dần: \n");
-    for (i = 0; i < n; i++) {
+    BubbleSort(a, n);
+    printf("Dãy số đã được sắp xếp: \n");
+    for(int i = 0; i < n; i++){
         printf("%d ", a[i]);
     }
     return 0;
