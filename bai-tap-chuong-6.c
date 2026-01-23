@@ -24,7 +24,7 @@ void InputArray(int a[], int *n){
 }
 
 int main(){
-    int a[MAX], n;
+    int a[MAX], n, i;
     InputArray(a, &n);
     SortArray(a, n);
     printf("Dãy số tăng dần: \n");
