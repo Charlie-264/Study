@@ -27,7 +27,7 @@ int main(){
     int a[MAX], n;
     InputArray(a, &n);
     BubbleSort(a, n);
-    printf("Dãy số đã được sắp xếp: \n");
+    printf("Dãy số sắp xếp: \n");
     for(int i = 0; i < n; i++){
         printf("%d ", a[i]);
     }

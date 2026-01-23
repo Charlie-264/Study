@@ -30,7 +30,7 @@ int main (){
     int a[MAX], n;
     InputArray(a, &n);
     SelectionSort(a, n);
-    printf("Dãy số đã sắp xếp: \n");
+    printf("Dãy số sắp xếp: \n");
     for(int i = 0; i < n; i++){
         printf("%d ", a[i]);
     }

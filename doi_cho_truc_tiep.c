@@ -27,7 +27,7 @@ int main(){
     int a[MAX], n, i;
     InputArray(a, &n);
     SortArray(a, n);
-    printf("Dãy số tăng dần: \n");
+    printf("Dãy số sắp xếp: \n");
     for (i = 0; i < n; i++) {
         printf("%d ", a[i]);
     }
