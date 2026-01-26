@@ -10,7 +10,7 @@ void Find(int i, int x, int a[], int n){
             printf("Phần tử %d được tìm thấy tại vị trí %d trong dãy.\n", x, i);
             return;
         }
-        else if (a[i] != x && i == n - 1){
+        else if (a[i] != x && i == n){
             printf("Phần tử %d không tồn tại trong dãy.\n", x);
             return;
         }
